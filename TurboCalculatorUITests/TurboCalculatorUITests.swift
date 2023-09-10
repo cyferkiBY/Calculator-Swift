@@ -8,34 +8,96 @@
 import XCTest
 
 final class TurboCalculatorUITests: XCTestCase {
-
+    
+    let app = XCUIApplication()
+    let device = XCUIDevice.shared
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        device.orientation = UIDeviceOrientation.portrait
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    override func tearDownWithError() throws {
+        app.terminate()
+    }
+    
+    func testAllNumericButtonAreDisplayedOnTheDisplay() throws {
+        app.buttons["one"].tap()
+        app.buttons["two"].tap()
+        app.buttons["three"].tap()
+        app.buttons["four"].tap()
+        app.buttons["five"].tap()
+        app.buttons["six"].tap()
+        app.buttons["seven"].tap()
+        app.buttons["eight"].tap()
+        app.buttons["nine"].tap()
+        app.buttons["zero"].tap()
+        
+        XCTAssert(app.staticTexts["1234567890"].exists)
+    }
+    
+    func testButtonCleanClearsResult() throws {
+        app.buttons["one"].tap()
+        app.buttons["two"].tap()
+        app.buttons["three"].tap()
+        app.buttons["plus"].tap()
+        app.buttons["two"].tap()
+        app.buttons["total"].tap()
+        app.buttons["clean"].tap()
+        
+        let result = app.buttons["result"].staticTexts.element.label
+        XCTAssertEqual(result, "0")
+    }
+    
+    func testOnePlusTwoIsThree() throws {
+        app.buttons["one"].tap()
+        app.buttons["plus"].tap()
+        app.buttons["two"].tap()
+        app.buttons["total"].tap()
+        
+        let result = app.buttons["result"].staticTexts.element.label
+        XCTAssertEqual(result, "3")
+    }
+    
+    func testSixMinusFourIsTwo() throws {
+        app.buttons["six"].tap()
+        app.buttons["minus"].tap()
+        app.buttons["four"].tap()
+        app.buttons["total"].tap()
+        
+        let result = app.buttons["result"].staticTexts.element.label
+        XCTAssertEqual(result, "2")
+    }
+    
+    func testTwoMultiplyThreeIsSix() throws {
+        app.buttons["two"].tap()
+        app.buttons["multiply"].tap()
+        app.buttons["three"].tap()
+        app.buttons["total"].tap()
+        
+        let result = app.buttons["result"].staticTexts.element.label
+        XCTAssertEqual(result, "6")
+    }
+    
+    func testTenDevideByFiveIsTwo() throws {
+        app.buttons["one"].tap()
+        app.buttons["zero"].tap()
+        app.buttons["devision"].tap()
+        app.buttons["five"].tap()
+        app.buttons["total"].tap()
+        
+        let result = app.buttons["result"].staticTexts.element.label
+        XCTAssertEqual(result, "2")
+    }
+    
+    func testDevideByZeroDisplaysAlert() throws {
+        app.buttons["one"].tap()
+        app.buttons["two"].tap()
+        app.buttons["devision"].tap()
+        app.buttons["zero"].tap()
+        app.buttons["total"].tap()
+        
+        XCTAssert(app.alerts["Ошибка"].descendants(matching:.staticText)["На ноль делить нельзя!"].waitForExistence(timeout: 1.0))
     }
 }
