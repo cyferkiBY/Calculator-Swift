@@ -1,8 +1,8 @@
 # Calculator-Swift
 A simple calculator written on Swift (Storyboard)
 
-
-
+You can watch screen recording of UI-autotests for this app:
+https://t.ly/4OS37
 
  
  <p align="center">
