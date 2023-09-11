@@ -13,7 +13,19 @@
 		0501C70B293B61C90073A10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0501C709293B61C90073A10F /* Main.storyboard */; };
 		0501C70D293B61CB0073A10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0501C70C293B61CB0073A10F /* Assets.xcassets */; };
 		0501C710293B61CB0073A10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0501C70E293B61CB0073A10F /* LaunchScreen.storyboard */; };
+		88DAD6EA2AACC84800BB8A32 /* TurboCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAD6E92AACC84800BB8A32 /* TurboCalculatorUITests.swift */; };
+		88DAD6EC2AACC84800BB8A32 /* TurboCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAD6EB2AACC84800BB8A32 /* TurboCalculatorUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88DAD6ED2AACC84800BB8A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0501C6F8293B61C80073A10F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0501C6FF293B61C80073A10F;
+			remoteInfo = TurboCalculator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0501C700293B61C90073A10F /* TurboCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurboCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		0501C70C293B61CB0073A10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0501C70F293B61CB0073A10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0501C711293B61CB0073A10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DAD6E72AACC84800BB8A32 /* TurboCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurboCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DAD6E92AACC84800BB8A32 /* TurboCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboCalculatorUITests.swift; sourceTree = "<group>"; };
+		88DAD6EB2AACC84800BB8A32 /* TurboCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0501C6FD293B61C80073A10F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DAD6E42AACC84800BB8A32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				0501C702293B61C90073A10F /* TurboCalculator */,
+				88DAD6E82AACC84800BB8A32 /* TurboCalculatorUITests */,
 				0501C701293B61C90073A10F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				0501C700293B61C90073A10F /* TurboCalculator.app */,
+				88DAD6E72AACC84800BB8A32 /* TurboCalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +89,15 @@
 				0501C711293B61CB0073A10F /* Info.plist */,
 			);
 			path = TurboCalculator;
+			sourceTree = "<group>";
+		};
+		88DAD6E82AACC84800BB8A32 /* TurboCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88DAD6E92AACC84800BB8A32 /* TurboCalculatorUITests.swift */,
+				88DAD6EB2AACC84800BB8A32 /* TurboCalculatorUITestsLaunchTests.swift */,
+			);
+			path = TurboCalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = 0501C700293B61C90073A10F /* TurboCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		88DAD6E62AACC84800BB8A32 /* TurboCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88DAD6F12AACC84800BB8A32 /* Build configuration list for PBXNativeTarget "TurboCalculatorUITests" */;
+			buildPhases = (
+				88DAD6E32AACC84800BB8A32 /* Sources */,
+				88DAD6E42AACC84800BB8A32 /* Frameworks */,
+				88DAD6E52AACC84800BB8A32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88DAD6EE2AACC84800BB8A32 /* PBXTargetDependency */,
+			);
+			name = TurboCalculatorUITests;
+			productName = TurboCalculatorUITests;
+			productReference = 88DAD6E72AACC84800BB8A32 /* TurboCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,11 +145,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					0501C6FF293B61C80073A10F = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					88DAD6E62AACC84800BB8A32 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0501C6FF293B61C80073A10F;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				0501C6FF293B61C80073A10F /* TurboCalculator */,
+				88DAD6E62AACC84800BB8A32 /* TurboCalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +184,13 @@
 				0501C710293B61CB0073A10F /* LaunchScreen.storyboard in Resources */,
 				0501C70D293B61CB0073A10F /* Assets.xcassets in Resources */,
 				0501C70B293B61C90073A10F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DAD6E52AACC84800BB8A32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +207,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88DAD6E32AACC84800BB8A32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DAD6EA2AACC84800BB8A32 /* TurboCalculatorUITests.swift in Sources */,
+				88DAD6EC2AACC84800BB8A32 /* TurboCalculatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88DAD6EE2AACC84800BB8A32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0501C6FF293B61C80073A10F /* TurboCalculator */;
+			targetProxy = 88DAD6ED2AACC84800BB8A32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0501C709293B61C90073A10F /* Main.storyboard */ = {
@@ -336,6 +416,49 @@
 			};
 			name = Release;
 		};
+		88DAD6EF2AACC84800BB8A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.TurboCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurboCalculator;
+			};
+			name = Debug;
+		};
+		88DAD6F02AACC84800BB8A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.TurboCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurboCalculator;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +476,15 @@
 			buildConfigurations = (
 				0501C715293B61CB0073A10F /* Debug */,
 				0501C716293B61CB0073A10F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88DAD6F12AACC84800BB8A32 /* Build configuration list for PBXNativeTarget "TurboCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DAD6EF2AACC84800BB8A32 /* Debug */,
+				88DAD6F02AACC84800BB8A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
