@@ -1,0 +1,14 @@
+name: iOS starter workflow
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  check:
+    name: Check secret
+    runs-on: macos-latest
+
+    steps:
+      - name: test_of_secret
+        run: echo ${{secrets.TEST_SECRET}}
