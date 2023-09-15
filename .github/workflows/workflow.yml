@@ -1,0 +1,71 @@
+name: iOS tests workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          clean: true
+
+      - name: Setup ruby
+        run: ruby -v
+
+      - name: Remove old files
+        run: |
+          rm -rf ./DerivedData**/**
+          rm -rf ./Build
+          rm -rf ./allure-results
+        
+      - name: Install Fastlane
+        run: bundle install
+
+      - name: Build app
+        run: bundle exec fastlane ios build_test_app
+
+      - name: Test app
+        run: bundle exec fastlane ios test_app
+
+      - name: Upload xcode results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: xcresult
+          path: Build/TurboCalculator.xcresult
+
+      - name: Send telegram message
+        if: ${{ always() }}
+        run: echo "Test run ended!"
+
+      - name: Download xcresult
+        if: ${{ always() }}
+        run: |
+          curl -OL https://github.com/eroshenkoam/xcresults/releases/latest/download/xcresults
+          chmod +x xcresults 
+
+      - name: Convert to allure result
+        if: ${{ always() }}
+        run: ./xcresults export ./Build/TurboCalculator.xcresult allure-results
+
+      - name: Upload allure results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure
+          path: allure-results
