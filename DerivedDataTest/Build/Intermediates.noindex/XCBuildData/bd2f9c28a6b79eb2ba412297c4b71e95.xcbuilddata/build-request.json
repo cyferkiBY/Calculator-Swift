@@ -1,0 +1,72 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "7c95624c7a0cedcdb22c97dd74f5259f15561ea2902cb3a69bf705c0ba121a21"
+    },
+    {
+      "guid" : "7c95624c7a0cedcdb22c97dd74f5259f86323fc70a5d0e6b63a55b36c2be7f1c"
+    }
+  ],
+  "containerPath" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/TurboCalculator.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.0",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Products",
+      "derivedDataPath" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest",
+      "indexDataStoreFolderPath" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone14,6",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.0",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone14,6",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "F9A1C11B-EEB5-49D8-A470-C8711C4C18B3",
+          "TARGET_DEVICE_MODEL" : "iPhone14,6",
+          "TARGET_DEVICE_OS_VERSION" : "17.0",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "test",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

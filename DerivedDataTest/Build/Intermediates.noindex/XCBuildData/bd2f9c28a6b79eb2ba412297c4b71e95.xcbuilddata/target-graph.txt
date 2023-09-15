@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'TurboCalculatorUITests' in project 'TurboCalculator'
+➜ Explicit dependency on target 'TurboCalculator' in project 'TurboCalculator'
+Target 'TurboCalculator' in project 'TurboCalculator' (no dependencies)

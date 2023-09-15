@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests-master.dia",
+    "emit-module-dependencies" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests-master.swiftdeps"
+  },
+  "/Users/katyabay/Desktop/Projects/Calculator-Swift/TurboCalculatorUITests/TurboCalculatorUITests.swift" : {
+    "const-values" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests.swiftconstvalues",
+    "dependencies" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests.d",
+    "diagnostics" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests.dia",
+    "index-unit-output-path" : "/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests.o",
+    "llvm-bc" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests.bc",
+    "object" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests.o",
+    "swift-dependencies" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests.swiftdeps",
+    "swiftmodule" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITests~partial.swiftmodule"
+  },
+  "/Users/katyabay/Desktop/Projects/Calculator-Swift/TurboCalculatorUITests/TurboCalculatorUITestsLaunchTests.swift" : {
+    "const-values" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests.swiftconstvalues",
+    "dependencies" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests.d",
+    "diagnostics" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests.dia",
+    "index-unit-output-path" : "/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests.o",
+    "llvm-bc" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests.bc",
+    "object" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests.o",
+    "swift-dependencies" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests.swiftdeps",
+    "swiftmodule" : "/Users/katyabay/Desktop/Projects/Calculator-Swift/DerivedDataTest/Build/Intermediates.noindex/TurboCalculator.build/Debug-iphonesimulator/TurboCalculatorUITests.build/Objects-normal/x86_64/TurboCalculatorUITestsLaunchTests~partial.swiftmodule"
+  }
+}

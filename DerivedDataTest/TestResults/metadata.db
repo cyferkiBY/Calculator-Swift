@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FormatVersion</key>
+	<integer>1</integer>
+	<key>Store</key>
+	<dict>
+		<key>TurboCalculatorUITests</key>
+		<dict>
+			<key>TurboCalculatorUITests</key>
+			<dict>
+				<key>testAllNumericButtonAreDisplayedOnTheDisplay</key>
+				<dict>
+					<key>mrnet</key>
+					<real>35.08146595954895</real>
+				</dict>
+				<key>testButtonCleanClearsResult</key>
+				<dict>
+					<key>mrnet</key>
+					<real>23.970256924629211</real>
+				</dict>
+				<key>testDevideByZeroDisplaysAlert</key>
+				<dict>
+					<key>mrnet</key>
+					<real>43.99962306022644</real>
+				</dict>
+				<key>testOnePlusTwoIsThree</key>
+				<dict>
+					<key>mrnet</key>
+					<real>31.051514983177185</real>
+				</dict>
+				<key>testSixMinusFourIsTwo</key>
+				<dict>
+					<key>mrnet</key>
+					<real>10.343507051467896</real>
+				</dict>
+				<key>testTenDevideByFiveIsTwo</key>
+				<dict>
+					<key>mrnet</key>
+					<real>29.647069931030273</real>
+				</dict>
+				<key>testTwoMultiplyThreeIsSix</key>
+				<dict>
+					<key>mrnet</key>
+					<real>30.502100944519043</real>
+				</dict>
+			</dict>
+			<key>TurboCalculatorUITestsLaunchTests</key>
+			<dict>
+				<key>testLaunch</key>
+				<dict>
+					<key>mrnet</key>
+					<real>9.0938349962234497</real>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
